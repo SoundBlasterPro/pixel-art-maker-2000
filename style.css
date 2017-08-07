@@ -1,0 +1,82 @@
+body {
+  margin: 2em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 1px #1f4d96;
+}
+
+p{
+    height: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px #40754b;
+}
+
+.interface{
+    background-color: lightgray;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    height: 590px;
+    background-image: url("pixel-wallpaper.png");
+    box-shadow: 0px 10px 200px #cccccc, 0px 10px 50px #9e9e9e
+}
+
+.controls{
+    background-color: rgba(255,255,255,0.5);
+    margin-top:20px;
+    padding: 1px 5px 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #40754b;
+}
+
+.canvas {
+    display: grid;
+    grid-template-columns: repeat(30, 15px);
+    grid-template-rows: repeat(25, 15px);
+    grid-gap: 0px;
+    background-color: lightgray;
+    width:min-content;
+    margin:auto;
+    box-shadow: 0px 10px 20px -2px black;
+
+}
+
+.cell {
+  background-color: #fff;
+  color: #fff;
+  border:1px solid #f1f1f1;
+  font-size: 150%;
+}
+
+.palette {
+    display: grid;
+    grid-template-columns: repeat(9, 20px);
+    grid-template-rows: repeat(1, 20px);
+    grid-gap: 5px;
+    /* background-color: lightgray; */
+    margin-top:10px;
+    width:min-content;
+}
+
+.color {
+  background-color: #fff;
+  color: #fff;
+  border:1px solid darkgray;
+  font-size: 150%;
+  border-radius: 10px;
+}
+.color:hover{
+    border: 1px solid #333;
+    box-shadow: 0px 5px 10px #40754b;
+}
+
+#currentcolor{
+    background-color:black;
+    border:2px solid #eee;
+    width: 40px;
+    height: 15px;
+}
